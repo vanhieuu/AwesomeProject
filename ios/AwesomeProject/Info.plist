@@ -17,6 +17,11 @@
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
+	<key>LSApplicationQueriesSchemes</key> 
+<array> 
+  <string>tel</string> 
+  <string>telprompt</string> 
+</array>
 	<string>$(MARKETING_VERSION)</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>

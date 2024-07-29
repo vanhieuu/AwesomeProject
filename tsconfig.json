@@ -1,3 +1,26 @@
 {
-  "extends": "@react-native/typescript-config/tsconfig.json"
+  "extends": "@react-native/typescript-config/tsconfig.json",
+  "compilerOptions": {
+    "baseUrl":".",
+    "paths": {
+      "react": [ "./node_modules/@types/react" ],
+      "@assets/*": ["./src/app/assets/*"],
+      "@common": ["./src/app/common/index"],
+      // "@typed-redux-saga": ["src/app/common/typed-redux-saga"],
+      // "@animated": ["./src/app/common/animated/index"],
+      "@config/*": ["./src/app/config/*"],
+      "@features/*": ["./src/app/features/*"],
+      "@components": ["./src/app/library/components/index"],
+      "@utils": ["./src/app/library/utils/index"],
+      "@library/*": ["./src/app/library/*"],
+
+      "@model/*": ["./src/app/model/*"],
+      "@navigation/*": ["./src/app/navigation/*"],
+      // "@store/*": ["./src/app/store/*"],
+      "@theme": ["./src/app/themes/index"],
+      "@theme/*": ["./src/app/themes/*"],
+      "@transition": ["./src/app/transition/index"],
+      
+    }
+  }
 }
